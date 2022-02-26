@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+:root {
+    --titlecolor: rgb(185, 83, 0);
+    --maincolor: rgb(148, 59, 0);
+    --maincolor2: rgb(110, 45, 1);
+    --subcolor: #ffffff8a;
+}
+
+html{
+    height:100%;
+}
+
+body {
+    background-image: Url("../Src/BG.jpg");
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header {
+    text-align: center;
+    background-color: var(--titlecolor);
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    font-size: 3vw;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.Footer {
+    position: relative;
+    text-align: center;
+}
+
+.btn--orange,
+a.btn--orange {
+  color: #fff;
+  background-color: var(--titlecolor);
+  height: 15vw;
+  width: 100%;
+  font-size: 4vw;
+  font-weight: bold;
+  color: aliceblue;
+}
+.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  background: #f56500;
+  height: 15vw;
+  width: 100%;
+  font-size: 4vw;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+main {
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+    margin-bottom: 15vw;
+}
+
+.MenuList {
+    list-style: none;
+    padding: 0px;
+    scroll-snap-align: center;
+    height: 100%;
+    width: 100%;
+    flex: none;
+}
+
+.MenuTitle {
+    font-size: 6vw;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    height: 10vw;
+    padding: 0 65px;
+    margin-left: 5%;
+    color: var(--maincolor2);
+}
+.MenuTitle:before,
+.MenuTitle:after {
+  position: absolute;
+  top: calc(50% - 3px);
+  width: 50px;
+  height: 6px;
+  content: '';
+  border-top: solid 2px var(--maincolor2);
+  border-bottom: solid 2px var(--maincolor2);
+}
+
+.MenuTitle:before {
+  left: 0;
+}
+
+.MenuTitle:after {
+  right: 0;
+}
+
+.MenuItem {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 30px;
+    border: 5px solid var(--maincolor);
+    color: var(--maincolor);
+    background-color: var(--subcolor);
+}
+
+.ItemName {
+    width: 82%;
+    font: 4vw 'arial', sans-serif;
+    padding: 1vw;
+    margin-left: 15px;
+}
+
+.ItemPrice {
+    font: 4vw 'arial', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    min-width: 18%;
+    padding: 1.5vw;
+    color: aliceblue;
+    background-color: var(--maincolor);
+    border: 5px solid var(--maincolor);
+}
