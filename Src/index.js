@@ -303,6 +303,10 @@ var Tofu = [{
 // 野菜料理
 var Veg = [{
     // 0
+    title:"あさりとセロリのさっぱり炒め",
+    price:580
+},{
+    // 0
     title:"野菜の塩味炒め",
     price:600
 },{
@@ -370,6 +374,41 @@ var Tensin = [{
     price:600
 }];
 
+// おすすめ
+var Osusume = [{
+    // 0
+    title:"腸詰め",
+    price:300
+},{
+    // 1
+    title:"そら豆のてんぷら",
+    price:380
+},{
+    // 2
+    title:"中華風チヂミ",
+    price:300
+},{
+    // 3
+    title:"蒸し鶏ももの麻辣ソース和え",
+    price:480
+},{
+    // 1
+    title:"川海老のから揚げ",
+    price:580
+},{
+    // 2
+    title:"しらうおの玉子焼き",
+    price:680
+},{
+    // 3
+    title:"肉団子甘酢",
+    price:680
+},{
+    // 3
+    title:"アスパラとイカの炒め",
+    price:880
+}];
+
 // デザート
 var Desert = [{
     // 0
@@ -429,6 +468,9 @@ var Menus = [{
 },{
     title:"点心",
     list:Tensin
+},{
+    title:"おすすめ",
+    list:Osusume
 },{
     title:"デザート",
     list:Desert
